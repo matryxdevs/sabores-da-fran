@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Sabores da Fran: cardápio online, pedidos pelo WhatsApp e muito sabor com retirada ou entrega." />
+  <link rel="icon" href="/assets/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Sabores da Fran | O sabor que conquista</title>
+</head>
+<body>
+  <div class="notice-bar"><span class="spark">✦</span><span id="announcement">FEITO COM CAPRICHO • RETIRADA OU ENTREGA</span><span class="spark">✦</span></div>
+  <header class="site-header" id="topo">
+    <div class="shell nav-content">
+      <a href="#topo" class="brand" aria-label="Sabores da Fran - início">
+        <img id="headerLogo" src="/assets/logo.png" alt="Logo Sabores da Fran" />
+        <span>SABORES <b>DA FRAN</b></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navegação">
+        <a href="#topo">Início</a><a href="#cardapio">Cardápio</a><a href="#promocoes">Promoções</a><a href="#sobre">Sobre nós</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#cardapio" class="nav-order">Fazer pedido <span>↗</span></a>
+        <button class="cart-trigger" type="button" id="openCart" aria-label="Abrir carrinho de compras"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h2l2.4 11.4a2 2 0 0 0 2 1.6H19a2 2 0 0 0 2-1.6L23 7H5"/><circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/></svg><span id="cartCount" class="cart-count">0</span></button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Navegação mobile"><a href="#topo">Início</a><a href="#cardapio">Cardápio</a><a href="#promocoes">Promoções</a><a href="#sobre">Sobre nós</a></nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-glow hero-glow-one"></div><div class="hero-glow hero-glow-two"></div>
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> HAMBÚRGUER COM PERSONALIDADE</div>
+          <h1 id="heroTitle">Sabor que <em>pega fogo.</em></h1>
+          <p id="heroSubtitle">Uma explosão de sabor em cada mordida. Escolha seus favoritos e peça direto pelo WhatsApp.</p>
+          <div class="hero-actions"><a class="btn btn-fire" href="#cardapio">Explorar cardápio <span>↗</span></a><a class="btn btn-outline" href="#sobre">Conhecer os sabores <span>↓</span></a></div>
+          <div class="hero-points"><div><span class="point-icon">🔥</span><span>Feito com<br/><b>muito sabor</b></span></div><div><span class="point-icon">🍔</span><span>Seu pedido<br/><b>do seu jeito</b></span></div><div><span class="point-icon">💬</span><span>Peça pelo<br/><b>WhatsApp</b></span></div></div>
+        </div>
+        <div class="hero-visual"><div class="hero-ring outer"></div><div class="hero-ring inner"></div><span class="hero-floating left">100%<br/><b>CAPRICHO</b></span><img id="heroLogo" src="/assets/logo.png" alt="Sabores da Fran, logo com chamas" /><span class="hero-floating right">SABOR<br/><b>DE VERDADE</b></span><span class="hero-floor"></span></div>
+      </div>
+      <div class="hero-bottom shell"><span>↓ ROLE E DESCUBRA O SABOR</span><span>SABORES DA FRAN • DELÍCIAS & MUITO MAIS</span></div>
+    </section>
+
+    <div class="ticker"><div class="ticker-track" aria-hidden="true"> <span>🍔 FEITO COM AMOR</span><i>✦</i><span>🔥 MUITO SABOR</span><i>✦</i><span>🍟 PEÇA DO SEU JEITO</span><i>✦</i><span>💬 DIRETO NO WHATSAPP</span><i>✦</i><span>🍔 FEITO COM AMOR</span><i>✦</i><span>🔥 MUITO SABOR</span><i>✦</i><span>🍟 PEÇA DO SEU JEITO</span><i>✦</i><span>💬 DIRETO NO WHATSAPP</span><i>✦</i></div></div>
+
+    <section class="section menu-section" id="cardapio">
+      <div class="shell">
+        <div class="section-top"><div><div class="mini-label">O NOSSO CARDÁPIO</div><h2>Escolha sua próxima <span>paixão.</span></h2><p>Prepare o apetite. Aqui cada escolha é um motivo para voltar.</p></div><div class="section-deco">01 / MENU</div></div>
+        <div class="demo-warning" id="demoWarning" hidden>⚠️ Cardápio demonstrativo: produtos e preços são exemplos. O administrador deve atualizar os dados antes de divulgar.</div>
+        <div class="category-tabs" id="categoryTabs" aria-label="Filtrar cardápio"></div>
+        <div class="product-grid" id="productGrid"><div class="loading-placeholder">Carregando nosso cardápio...</div></div>
+      </div>
+    </section>
+
+    <section class="section promo-section" id="promocoes"><div class="shell"><div class="section-top"><div><div class="mini-label">NOVIDADES & DESTAQUES</div><h2>Tem coisa boa <span>rolando!</span></h2></div></div><div id="promoGrid" class="promo-grid"></div></div></section>
+
+    <section class="steps-section"><div class="shell"><div class="section-top"><div><div class="mini-label">SIMPLES, RÁPIDO, DELICIOSO</div><h2>Seu pedido em <span>3 passos.</span></h2></div></div><div class="steps-grid"><div class="step"><span class="step-number">01</span><div class="step-emoji">🍔</div><h3>Escolha os favoritos</h3><p>Explore o cardápio e adicione seus lanches ao carrinho.</p></div><div class="step"><span class="step-number">02</span><div class="step-emoji">📍</div><h3>Retirada ou entrega</h3><p>Informe seus dados e escolha como quer receber seu pedido.</p></div><div class="step"><span class="step-number">03</span><div class="step-emoji">💬</div><h3>Finalize no WhatsApp</h3><p>Abra a mensagem pronta e toque em enviar para confirmar com a gente.</p></div></div></div></section>
+
+    <section class="section story-section" id="sobre"><div class="shell story-grid"><div class="story-image"><div class="story-inner"><span class="story-kicker">NÃO É SÓ UM HAMBÚRGUER.</span><img id="storyLogo" src="/assets/logo.png" alt="Logo Sabores da Fran" /><span class="story-caption">É UMA EXPERIÊNCIA DE SABOR.</span></div></div><div class="story-text"><div class="mini-label">PRAZER, SOMOS A SABORES DA FRAN!</div><h2>Aqui a fome encontra <span>seu lugar.</span></h2><p id="storyTagline">Hambúrguer de respeito, feito para matar a sua fome de verdade.</p><p>Nosso cardápio foi pensado para quem valoriza comida caprichada e muito sabor. Escolha, monte o carrinho e fale diretamente com a equipe para combinar seu pedido.</p><a class="btn btn-fire" href="#cardapio">Quero pedir agora <span>↗</span></a></div></div></section>
+
+    <section class="section video-section" id="videoSection" hidden><div class="shell"><div class="video-head"><div class="mini-label">NOS BASTIDORES</div><h2>Assista mais da <span>Sabores da Fran.</span></h2><p>Apresente dois vídeos diferentes para mostrar seus pratos, ambiente ou promoções.</p></div><div id="videoGallery" class="video-gallery"></div></div></section>
+
+    <section class="section contact-section"><div class="shell contact-card"><div><div class="mini-label">BATEU A FOME?</div><h2>Seu próximo lanche <span>começa aqui.</span></h2><p>Retire no local ou solicite entrega. Nosso atendimento confirma seu pedido pelo WhatsApp.</p><div class="info-row" id="addressInfo" hidden><span>📍</span><span id="addressText"></span></div><div class="info-row"><span>🕐</span><span id="hoursText">Confira os horários no WhatsApp</span></div></div><div class="contact-actions"><a href="#cardapio" class="btn btn-fire">Fazer meu pedido <span>↗</span></a><a id="instagramLink" class="text-link" hidden target="_blank" rel="noopener noreferrer">Siga no Instagram ↗</a><a id="mapLink" class="text-link" hidden target="_blank" rel="noopener noreferrer">Ver localização ↗</a></div></div></section>
+
+    <section class="section location-section" id="localizacao"><div class="shell location-layout"><div><div class="mini-label">ONDE ESTAMOS</div><h2>Encontre a <span>Sabores da Fran.</span></h2><p>Confira nossa localização no mapa e abra a rota até o estabelecimento.</p><a id="locationRoute" class="btn btn-fire" href="https://www.google.com/maps/search/?api=1&query=-6.5395278%2C-49.8771111" target="_blank" rel="noopener noreferrer">📍 Abrir rota no Google Maps ↗</a></div><div class="location-map-wrap"><iframe id="locationMap" title="Localização da Sabores da Fran no Google Maps" src="https://maps.google.com/maps?q=-6.5395278%2C-49.8771111&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="shell footer-content"><div class="footer-brand"><img id="footerLogo" src="/assets/logo.png" alt=""/><span>SABORES <b>DA FRAN</b></span></div><span>© <span id="year"></span> Sabores da Fran. Feito com sabor e carinho.</span><div style="display:flex;gap:18px"><a href="/privacidade.html" class="admin-footer">Privacidade</a><a href="/admin" class="admin-footer">Área administrativa</a></div></div></footer>
+
+  <div class="overlay" id="drawerOverlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="drawer-header"><div><div class="mini-label">SEU PEDIDO</div><h2 id="cartTitle">Meu carrinho <span>🛒</span></h2></div><button class="icon-button" id="closeCart" aria-label="Fechar carrinho">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="drawer-bottom"><div class="cart-subtotal"><span>Subtotal</span><strong id="cartSubtotal">R$ 0,00</strong></div><p class="cart-fine">Taxa de entrega, se houver, é calculada na próxima etapa.</p><button type="button" class="btn btn-fire btn-block" id="checkoutBtn">Continuar pedido <span>→</span></button></div>
+  </aside>
+
+  <div class="modal-backdrop" id="checkoutOverlay" hidden><div class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><div class="modal-heading"><div><div class="mini-label">QUASE LÁ!</div><h2 id="checkoutTitle">Finalizar pedido</h2></div><button class="icon-button" id="closeCheckout" aria-label="Fechar">×</button></div>
+    <form id="checkoutForm" class="checkout-form"><div class="checkout-summary"><b id="checkoutItemsCount">0 itens</b><strong id="checkoutTotal">R$ 0,00</strong></div>
+      <div class="field"><label for="customerName">Seu nome *</label><input id="customerName" name="name" placeholder="Como podemos chamar você?" maxlength="90" minlength="2" required autocomplete="name" /></div>
+      <div class="field"><label for="customerPhone">Seu WhatsApp com DDD *</label><input id="customerPhone" name="phone" placeholder="(94) 99999-9999" inputmode="tel" autocomplete="tel" maxlength="22" required /></div>
+      <label class="field-label">Como você quer receber? *</label><div class="choice-grid"><label class="choice"><input type="radio" name="type" value="pickup" checked /><span><b>🏪 Retirar no local</b><small>Você busca o pedido</small></span></label><label class="choice"><input type="radio" name="type" value="delivery" /><span><b>🛵 Receber em casa</b><small>Entrega no endereço</small></span></label></div>
+      <div id="deliveryFields" class="delivery-fields" hidden><div class="field"><label for="customerAddress">Endereço completo *</label><textarea id="customerAddress" name="address" rows="2" maxlength="350" placeholder="Rua, número, bairro, cidade e complemento"></textarea></div><div class="field"><label for="customerReference">Ponto de referência *</label><input id="customerReference" name="reference" maxlength="150" placeholder="Ex.: ao lado da praça" /></div></div>
+      <div class="field"><label for="customerPayment">Forma de pagamento</label><select id="customerPayment" name="payment"><option>A combinar no WhatsApp</option><option>Pix</option><option>Cartão</option><option>Dinheiro</option></select></div>
+      <div class="field"><label for="customerNote">Observações (opcional)</label><textarea id="customerNote" name="note" rows="2" maxlength="350" placeholder="Ex.: sem cebola, molho à parte..."></textarea></div>
+      <label class="consent-line"><input type="checkbox" id="notifyOptIn" name="notifyOptIn" value="yes"/><span>Autorizo receber <b>avisos automáticos sobre o andamento deste pedido</b> no WhatsApp informado, usando a plataforma oficial. Posso solicitar que os avisos parem pelo atendimento.</span></label>
+      <div class="checkout-price" id="checkoutPriceDetails"></div><button type="submit" class="btn btn-fire btn-block" id="submitOrder">Abrir WhatsApp com meu pedido <span>↗</span></button><p class="checkout-disclaimer">Os dados informados serão utilizados para registrar e atender sua solicitação. Consulte o <a href="/privacidade.html" target="_blank" rel="noopener noreferrer" style="text-decoration:underline;color:#ffb97e">aviso de privacidade</a>.<br>O WhatsApp será aberto com a mensagem pronta. <b>Toque em enviar no WhatsApp</b> para concluir a solicitação. O pedido ainda depende da confirmação da hamburgueria.</p>
+    </form></div></div>
+
+  <div class="modal-backdrop" id="configOverlay" hidden>
+    <div class="checkout-modal config-modal" role="dialog" aria-modal="true" aria-labelledby="configTitle">
+      <div class="modal-heading"><div><div class="mini-label">MONTE SEU PEDIDO</div><h2 id="configTitle">Personalizar item</h2></div><button class="icon-button" type="button" id="closeConfig" aria-label="Fechar personalização">×</button></div>
+      <form class="config-form" id="configForm"><p id="configDescription"></p><div id="configGroups"></div>
+        <div class="config-bottom"><label for="configQuantity">Quantidade</label><input id="configQuantity" name="quantity" type="number" min="1" max="30" value="1" required/>
+          <div class="config-total"><span>Total do item</span><strong id="configTotal">R$ 0,00</strong></div>
+        </div><button class="btn btn-fire btn-block" type="submit">Adicionar personalizado ao carrinho →</button>
+      </form>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js" defer></script>
+</body></html>
